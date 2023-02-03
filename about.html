@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Обо мне</title>
+    <style>
+      body {
+        background-color: rgba(108, 108, 4, 0.563);
+      }
+      .list-group-item {
+        box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
+        padding: 0.6em;
+        margin-bottom: 1em;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+      }
+      .rounded-img {
+        width: 60%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
+        padding: 0.6em;
+        margin-bottom: 1em;
+      }
+      .avatar {
+        box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
+        padding: 0.6em;
+        margin-bottom: 1em;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+      }
+      li.list-group-item {
+        position: relative;
+        left: 300px;
+        right: 100px;
+        width: 620px;
+      }
+      abbr[title] {
+        border-bottom: none !important;
+        cursor: inherit !important;
+        text-decoration: none !important;
+      }
+      @media (max-width: 1210px) and (max-width: 1199px) {
+        .about_text {
+          position: relative;
+          top: 450px;
+          left: 100px;
+        }
+        .list-item {
+          position: relative;
+          top: 460px;
+          right: 60px;
+        }
+        .user_name {
+          position: relative;
+          top: 430px;
+          left: 100px;
+        }
+        .container-img {
+          position: relative;
+          left: 435px;
+          bottom: 100px;
+        }
+      }
+      @media (max-width: 991px) {
+        .about_text {
+          position: relative;
+          top: 450px;
+          left: 0px;
+        }
+        .list-item {
+          position: relative;
+          top: 460px;
+          right: 320px;
+        }
+        .user_name {
+          position: relative;
+          top: 430px;
+          left: 0px;
+        }
+        .container-img {
+          position: relative;
+          left: 190px;
+          bottom: 100px;
+        }
+      }
+      @media (max-width: 767px) {
+        .about_text {
+          position: relative;
+          top: 450px;
+          left: 0px;
+        }
+        .list-item {
+          position: relative;
+          top: 460px;
+          right: 400px;
+        }
+        .user_name {
+          position: relative;
+          top: 430px;
+          left: 0px;
+        }
+        .container-img {
+          position: relative;
+          left: 100px;
+          bottom: 100px;
+        }
+      }
+      @media (max-width: 465px) {
+        .about_text {
+          position: relative;
+          top: 450px;
+          left: 0px;
+        }
+        .list-item {
+          position: relative;
+          top: 460px;
+          right: 320px;
+        }
+        .user_name {
+          position: relative;
+          top: 430px;
+          left: 0px;
+        }
+        .container-img {
+          position: relative;
+          left: 80px;
+          bottom: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="#"
+          ><img src="/logo.png" alt="logo" width="40"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Переключатель навигации"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">Обо мне</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Обо мне раздел -->
+    <div class="container">
+      <div class="row">
+        <div class="text-center my-5">
+          <h1 class="about_text text-dark fw-semibold">ОБО МНЕ</h1>
+          <div class="container-img container position-relative">
+            <img
+              class="avatar position-absolute start-0 top-50 my-5"
+              src="/avatar.jpg"
+              alt="avatar"
+              width="300"
+            />
+          </div>
+        </div>
+        <div class="text-center">
+          <h1 class="user_name fw-semibold fs-2 text text-center">
+            Меня зовут Адриан Голубчук
+          </h1>
+          <br />
+          <ul class="list-item list-group-flush">
+            <li class="list-group-item">
+              Я начинающий Веб-разработчик и это первый мой сайт
+            </li>
+            <li class="list-group-item">
+              Я студент. Мне 20 лет и моя специальность
+              <abbr title="Информационная Безопаность">ИБ</abbr>
+            </li>
+            <li class="list-group-item">
+              Целеустремленный, ответственный, доброжелательный
+            </li>
+            <li class="list-group-item">
+              Владею уверенно компьютером и разными ПО
+            </li>
+            <li class="list-group-item">
+              Знаю такие ЯП, как: Python (основы), HTML, CSS
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
